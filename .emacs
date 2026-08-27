@@ -1,4 +1,4 @@
-(setq custom-configs "~/.emacs.custom.el")
+3(setq custom-configs "~/.emacs.custom.el")
 (package-initialize)
 
 ;; Completly copied from here https://github.com/rexim/dotfiles/blob/master/.emacs
@@ -18,8 +18,8 @@
 (global-set-key (kbd "C-º") 'comment-line)
 ;; (global-set-key (kbd "C-<tab>") 'other-window)
 
-(rc/require 'nano-theme)
-(load-theme 'nano-dark)
+(rc/require 'monokai-theme)
+(load-theme 'monokai)
 
 ;; Move-text shortcuts
 (rc/require 'move-text)
@@ -89,20 +89,3 @@
 
 
 (load-file custom-configs)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   '("de8f2d8b64627535871495d6fe65b7d0070c4a1eb51550ce258cd240ff9394b0" default))
- '(inhibit-startup-screen t)
- '(package-selected-packages
-   '(nano-theme cmake-mode markdown-mode magit multiple-cursors move-text lsp-mode lsp-ui ccls flycheck yasnippet which-key helm-lsp helm lsp-treemacs))
- '(visible-bell t))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
