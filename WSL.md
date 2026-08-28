@@ -21,6 +21,7 @@ Basic configuration for WSL/Linux environment. I use this just to have some refe
 List of basic things that I need
 
 - git (`sudo dnf install git`)
+- oh-my-posh
 
 ### C++
 
