@@ -9,6 +9,7 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (global-display-line-numbers-mode)
+(set-frame-font "DejaVu Sans Mono 11" nil t)
 
 ;; Keyboard Basic Shortcuts
 (global-set-key (kbd "C-z") 'undo)
@@ -18,8 +19,8 @@
 (global-set-key (kbd "C-º") 'comment-line)
 ;; (global-set-key (kbd "C-<tab>") 'other-window)
 
-(rc/require 'monokai-theme)
-(load-theme 'monokai)
+(rc/require 'night-owl-theme)
+(load-theme 'night-owl)
 
 ;; Move-text shortcuts
 (rc/require 'move-text)

@@ -16,12 +16,23 @@ Basic configuration for WSL/Linux environment. I use this just to have some refe
 - Check for the version here https://koji.fedoraproject.org/koji/packageinfo?packageID=41688
 - It should be like this `wsl --install --from-file .\Fedora-WSL-Base-43-1.6.x86_64.wsl`
 
+## Customization
+
+### Oh My Posh
+
+Pretty themes for the terminal
+
+- install `curl -s https://ohmyposh.dev/install.sh | bash -s`
+- run `oh-my-posh font install meslo`
+- If not present run `touch ~/.profile`
+- I like this theme so and created a the following path `~/.config/oh-my-posh-themes/`
+- run `sh theme-setup.sh` and then `source ~/.profile`
+
 ## Development
 
 List of basic things that I need
 
 - git (`sudo dnf install git`)
-- oh-my-posh
 
 ### C++
 
