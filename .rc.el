@@ -1,4 +1,4 @@
-;; Completly copied from here https://github.com/rexim/dotfiles/blob/master/.emacs
+;; Completly copied from here https://github.com/rexim/dotfiles/blob/master/.emacs.rc/rc.el
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/")
 	     '("melpa-stable" . "https://stable.melpa.org/packages/"))

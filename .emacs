@@ -1,4 +1,4 @@
-3(setq custom-configs "~/.emacs.custom.el")
+(setq custom-configs "~/.emacs.custom.el")
 (package-initialize)
 
 ;; Completly copied from here https://github.com/rexim/dotfiles/blob/master/.emacs
@@ -26,7 +26,7 @@
 (global-set-key (kbd "M-<up>") 'move-text-up)
 (global-set-key (kbd "M-<down>") 'move-text-down)
 
-;; C++ Config
+;; C++ Config begin
 (rc/require 'lsp-mode)
 (add-hook 'lsp-mode 'lsp-enable-which-key-integration)
 (setq lsp-completion-enable-additional-text-edit nil)
@@ -51,6 +51,7 @@
 (rc/require 'helm)
 (helm-mode)
 (rc/require 'lsp-treemacs)
+;; C++ Config end
 
 ;; Magit (git library)
 (rc/require 'cl-lib)
