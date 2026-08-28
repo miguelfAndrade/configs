@@ -51,6 +51,8 @@
 (rc/require 'helm)
 (helm-mode)
 (rc/require 'lsp-treemacs)
+(rc/require 'cmake-mode)
+(rc/require 'markdown-mode)
 ;; C++ Config end
 
 ;; Magit (git library)
@@ -59,8 +61,8 @@
 
 (setq magit-auto-revert-mode nil)
 
-(global-set-key (kbd "C-c m s") 'magit-status)
-(global-set-key (kbd "C-c m l") 'magit-log)
+;; (global-set-key (kbd "C-c m s") 'magit-status)
+;; (global-set-key (kbd "C-c m l") 'magit-log)
 
 ;; Code stolen from here: https://github.com/rexim/dotfiles/blob/e3f123e1eda53ae6d21402ce4ae5c9533124d009/.emacs.rc/misc-rc.el#L113-L125
 (defun duplicate-line ()

@@ -1,4 +1,4 @@
-# WSL Configurations
+# WSL Configurations (WIP)
 
 Basic configuration for WSL/Linux environment. I use this just to have some reference to start fresh
 
@@ -15,3 +15,16 @@ Basic configuration for WSL/Linux environment. I use this just to have some refe
 
 - Check for the version here https://koji.fedoraproject.org/koji/packageinfo?packageID=41688
 - It should be like this `wsl --install --from-file .\Fedora-WSL-Base-43-1.6.x86_64.wsl`
+
+## Development
+
+List of basic things that I need
+
+- git (`sudo dnf install git`)
+
+### C++
+
+Some things are already present in the OS (ex: gcc)
+
+- clang (`sudo dnf install clang`)
+- cmake (`sudo dnf install cmake`)
