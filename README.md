@@ -1,14 +1,9 @@
-# configs
+# Configs
+
 Personal config files for later reference
 
-## EMACS
+List per topic (may change later)
 
-- M-x (ALT-x): list-packages (find doric-themes)
-- M-x: customize-themes (doric-valley)
-- Copy the content added to .emacs to a new file .emacs.custom.el
+- [Emacs](EMACS.md) - Emacs config setup
+- [WSL](WSL.md) - WSL setupa as well language developement setup (C++,Java, etc)
 
-## Fedora (WSL)
-
-- Go to https://ftp.uni-stuttgart.de/fedora/releases/
-- Select the 42 (right now is the only one with .tar file)
-- In powershell run `wsl --import Fedora \local\path \fedora.tar`

@@ -1,0 +1,17 @@
+# WSL Configurations
+
+Basic configuration for WSL/Linux environment. I use this just to have some reference to start fresh
+
+## WSL Fedora
+
+#### For WSL version before 2.4.4 (<2.4.4) ([Docs](https://docs.fedoraproject.org/en-US/cloud/wsl/#_installing_fedora_in_wsl))
+
+- Go through the releases here https://ftp.uni-stuttgart.de/fedora/releases/ or here https://koji.fedoraproject.org/koji/packageinfo?packageID=41688
+- Select the 42 (right now is the only one with .tar file)
+- I can follow this [guide](https://www.linuxfordevices.com/tutorials/linux/install-fedora-on-windows)
+- In powershell run `wsl --import Fedora \installation\folder \fedora.tar`
+
+#### For WSL version after 2.4.4 (>2.4.4)
+
+- Check for the version here https://koji.fedoraproject.org/koji/packageinfo?packageID=41688
+- It should be like this `wsl --install --from-file .\Fedora-WSL-Base-43-1.6.x86_64.wsl`
