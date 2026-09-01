@@ -20,13 +20,12 @@ Basic configuration for WSL/Linux environment. I use this just to have some refe
 
 ### Oh My Posh
 
-Pretty themes for the terminal (Maybe create the bash script to do this all at once)
+Pretty themes for the terminal (Should be enough to only run the script)
 
 - Install `curl -s https://ohmyposh.dev/install.sh | bash -s`
 - Run `oh-my-posh font install meslo` (for the themes to work correctly)
-- If not present run `touch ~/.profile`
 - I like this [theme](https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/tokyonight_storm.omp.json). Create the following path `~/.config/oh-my-posh-themes/`
-- Run `sh theme-setup.sh` and then `source ~/.profile`
+- Run `sh theme-setup.sh` and then `source ~/.bashrc`
 
 ## Development
 
