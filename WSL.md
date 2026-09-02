@@ -39,3 +39,19 @@ Some things are already present in the OS (ex: gcc)
 
 - clang (`sudo dnf install clang`)
 - cmake (`sudo dnf install cmake`)
+- gcc c++ (`sudo dnf install gcc-c++`) - if not already present in Fedora
+
+
+### OpenGl
+
+- `sudo dnf install mesa-libGL-devel mesa-libGLU-devel freeglut-devel glfw-devel glm-devel`
+- mesa-utils to confirm correct installation `sudo dnf install mesa-demos`
+- Check the version `glxinfo | grep "OpenGL version"` or `glxinfo -B` or `eglinfo -B` (needs to install glxinfo, which comes from mesa drivers)
+- Windowing library, the internet says this one is the one, GLFW `sudo dnf install glfw-devel`
+- Also I need this GLAD. I've followed this guide https://linuxvox.com/blog/install-opengl-linux/
+  - Go to https://gen.glad.sh/ or to this [permalink](https://tinyurl.com/y33yx3tc) to skip the rest of the steps
+  - Select the C generator and gl as the API.
+  - Choose OpenGL 3.3 (or your target version) and the Core profile.
+  - Leave the built-in loader option disabled because GLFW supplies glfwGetProcAddress.
+  - Generate and extract the archive. The files used below are include/glad/gl.h, include/KHR/khrplatform.h, and src/gl.c.
+  - Add gl.c to your build and include the generated include/ directory in your compiler's header search path.
