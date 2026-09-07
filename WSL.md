@@ -44,8 +44,8 @@ Some things are already present in the OS (ex: gcc)
 
 ### OpenGl
 
-- `sudo dnf install mesa-libGL-devel mesa-libGLU-devel freeglut-devel glfw-devel glm-devel`
-- mesa-utils to confirm correct installation `sudo dnf install mesa-demos`
+- `sudo dnf install mesa-libGL-devel mesa-libGLU-devel freeglut-devel glfw-devel glm-devel glxinfo`
+- mesa-utils to confirm correct installation `sudo dnf install mesa-demos` (Not entirely sure if this is needed)
 - Check the version `glxinfo | grep "OpenGL version"` or `glxinfo -B` or `eglinfo -B` (needs to install glxinfo, which comes from mesa drivers)
 - Windowing library, the internet says this one is the one, GLFW `sudo dnf install glfw-devel`
 - Also I need this GLAD. I've followed this guide https://linuxvox.com/blog/install-opengl-linux/
