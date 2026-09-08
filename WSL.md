@@ -4,6 +4,8 @@ Basic configuration for WSL/Linux environment. I use this just to have some refe
 
 ## WSL Fedora
 
+I use Fedora, but the steps should be the same for other distros. (I'll need to add Ubuntu as well).
+
 #### For WSL version before 2.4.4 (<2.4.4) ([Docs](https://docs.fedoraproject.org/en-US/cloud/wsl/#_installing_fedora_in_wsl))
 
 - Go through the releases here https://ftp.uni-stuttgart.de/fedora/releases/ or here https://koji.fedoraproject.org/koji/packageinfo?packageID=41688
@@ -42,7 +44,7 @@ Some things are already present in the OS (ex: gcc)
 - gcc c++ (`sudo dnf install gcc-c++`) - if not already present in Fedora
 
 
-### OpenGl
+### OpenGL
 
 - `sudo dnf install mesa-libGL-devel mesa-libGLU-devel freeglut-devel glfw-devel glm-devel glxinfo`
 - mesa-utils to confirm correct installation `sudo dnf install mesa-demos` (Not entirely sure if this is needed)

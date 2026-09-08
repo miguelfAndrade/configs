@@ -78,6 +78,19 @@
     (move-beginning-of-line 1)
     (forward-char column)))
 
+;; Function to enable to copy from emacs to outside emacs
+;; For some reason I got this problem when using WSL with Fedora (in one machine)
+;; this was the solution of ChatGPT and it works
+;; (defun my-copy-to-wayland (beg end)
+;;   (interactive "r")
+;;   (let ((text (buffer-substring-no-properties beg end)))
+;;     (call-process-region
+;;      beg end
+;;      "wl-copy"
+;;      nil nil nil)))
+
+;; (global-set-key (kbd "M-w") #'my-copy-to-wayland)
+
 ;;; This will enable emacs to compile a simple cpp single file without any makefile by just pressing [f9] key
 ;; (defun code-compile()
 ;;   (interactive)
