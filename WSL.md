@@ -20,6 +20,10 @@ I use Fedora, but the steps should be the same for other distros. (I'll need to 
 
 ## Customization
 
+### Fonts for Pogramming
+
+- If not present, install this `sudo dnf install dejavu-fonts-all`
+
 ### Oh My Posh
 
 Pretty themes for the terminal (Should be enough to only run the script)
