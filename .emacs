@@ -89,7 +89,7 @@
 ;;      "wl-copy"
 ;;      nil nil nil)))
 
-;; (global-set-key (kbd "M-w") #'my-copy-to-wayland)
+;; (global-set-key (kbd "C-c w") #'my-copy-to-wayland)
 
 ;;; This will enable emacs to compile a simple cpp single file without any makefile by just pressing [f9] key
 ;; (defun code-compile()
