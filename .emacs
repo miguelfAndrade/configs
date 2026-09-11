@@ -10,6 +10,14 @@
 (scroll-bar-mode -1)
 (global-display-line-numbers-mode)
 (set-frame-font "DejaVu Sans Mono 11" nil t)
+(use-package format-all
+  :commands format-all-mode
+  :hook (prog-mode . format-all-mode)
+  :config
+  (setq-default format-all-formatters
+                '(("C"     (astyle "--mode=c"))
+                  ("Shell" (shfmt "-i" "4" "-ci")))))
+
 
 ;; Keyboard Basic Shortcuts
 (global-set-key (kbd "C-z") 'undo)
