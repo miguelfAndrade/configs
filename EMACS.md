@@ -3,7 +3,7 @@
 Just copy the files `.emacs`, `.emacs.custom.el` and `.rc.el` to the home folder
 `cp .emacs .emacs.custom.el .rc.el ~/`
 
-Or use the script
+Or run the script `emacs-setup.sh`
 
 Some useful links to refresh the memory
 
